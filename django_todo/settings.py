@@ -29,7 +29,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['hello-django-lms.herokuapp.com']
 
-SECRET_KEY = os.environ.setdefault("SECRET_KEY", "")
+SECRET_KEY = os.environ.setdefault("SECRET_KEY")
 
 # Application definition
 
