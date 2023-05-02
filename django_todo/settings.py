@@ -32,7 +32,7 @@ DEBUG = development
 if development:
     ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 else:
-    ALLOWED_HOSTS = [os.environ.get('hello-django-lms.herokuapp.com')]
+    ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
 
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
