@@ -30,11 +30,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DEBUG = development
 
 if development:
-    ALLOWED_HOSTS = ['localhost']
+    ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 else:
     ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
 
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # Application definition
 
